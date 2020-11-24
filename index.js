@@ -12,7 +12,7 @@ class BranchesAPI extends RESTDataSource {
   }
   
   async getBranches() {
-	  return this.get('/');
+	return this.get('/');
   }
 }
 
@@ -58,7 +58,7 @@ const server = new ApolloServer({
     tracing: false,
 });
 
-//The `listen` method launches a web server.
+// The `listen` method launches a web server.
 server.listen().then(({ url }) => {
 	console.log(`🚀  Server ready at ${url}`);
 });
